@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Tema5</title>
+    
+    <style>
+        .flex-container {
+            display:flex;
+background-color: white;
+height:100vh;
+flex-direction:column;
+        }
+        .box1 {
+            background-color: red;
+            height:100px;
+        }
+.flex-middle-container {
+    display:flex;
+    flex-wrap:wrap;
+    height:800px;
+    flex-direction:row;
+
+}
+.box2 {
+    background-color: blue;
+    flex-grow:1;
+    height:80vh;
+}
+.box3 {
+    background-color:yellow;
+    flex-grow:2;
+    height:500px;
+}
+.box4 {
+    align-self:flex-end;
+    background-color:green;
+    height:10vh;
+    width:100vw;
+}
+    </style>
+    </head>
+    <body>
+       <div class="flex-container">
+           <div class="box1"></div> <!--chenar rosu-->
+           <div class="flex-middle-container"> 
+               <div class="box2"></div> <!--partea albastra-->
+               <div class="box3"></div> <!--partea galbena-->
+               <div class="box4"></div> <!--partea verde de jos-->
+
+           </div>
+       </div>
+
+    </body>
+</html>
+
+
+
