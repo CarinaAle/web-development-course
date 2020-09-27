@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tema</title>
+    </head>
+    <body>
+        <p>Using setInterval make a div that grows in width each second up until it is the full length of the page.</p>
+        <div id="grow">Div-ul care creste in fiecare secunda</div>
+        <style>
+            body {
+                color: rebeccapurple;
+                background-color: gold;   }
+            div {
+                height: 640px;
+                width: 200px;
+                background-color: black;  }
+            p {
+                background-color:whitesmoke ;
+            }
+        </style>
+        <script>
+            var w = 100;
+            var growing = setInterval(function () {
+            if(w>1515) cancelInterval(growing)
+            w = w + 5;
+            document.getElementById("grow").style.width = w + 'px';
+            }, 1000);
+        </script>
+    </body>
+</html>
