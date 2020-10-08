@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reacting to events homework</title>
+    </head>
+    <body>
+        <button  id="button">Button</button>
+        <script>
+            function Hovered() {
+                document.getElementById(
+                    "button"
+                ).innerText = "Hovered"
+                
+            }
+            document.getElementById("button").onmouseover = Hovered;
+
+        </script>
+      
+        
+    </body>
+</html>

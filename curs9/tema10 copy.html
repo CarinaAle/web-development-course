@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using reduce</title>
+        <script>
+     let arr = [1, 2, 3, 4, 5];
+     var reducedArray = arr.reduce(function(ac, item){
+         ac.unshift(item)
+         return ac
+     }, [])
+     //acc-acumulator[],declara o noua lista,nu o schimba pe cea originala
+     //unshift-pushing into the front each item
+     console.log(`reduced array`)
+     console.log(reducedArray)
+        </script>
+    </head>
+</html>

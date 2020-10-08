@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Tema</title>
+  </head>
+  <body>
+    <p>
+      Using setInterval make a div that grows in width each second up until it
+      is the full length of the page.
+    </p>
+    <div id="grow">Div-ul care creste in fiecare secunda</div>
+    <style>
+      body {
+        color: rebeccapurple;
+        background-color: gold;
+      }
+      div {
+        height: 640px;
+        width: 200px;
+        background-color: black;
+      }
+      p {
+        background-color: whitesmoke;
+      }
+    </style>
+    <script>
+      var w = 100;
+      var growing = setInterval(function () {
+        // here you should use clearInterval instead of cancelInterval (which does not exist)
+        // also write here an if else and in the else block please put the lines where you increase w and make the div grow
+        // if you don't use if else the code where you increase w will be executed and the div will grow beyond the width
+        // of the browser
+        // instead of 1515 please use window.innerWidth to get the width of the browser. This will make your code work
+        // on any resolution not just yours :)
+        if (w > 1515) cancelInterval(growing);
+        w = w + 5;
+        document.getElementById("grow").style.width = w + "px";
+      }, 1000);
+    </script>
+  </body>
+</html>
