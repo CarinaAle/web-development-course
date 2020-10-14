@@ -1,0 +1,36 @@
+.body {
+  width: 100vw;
+  height:100vh;
+  display: flex;
+  justify-content: center;
+}
+.Person {
+width: 90wh;
+height:200px;
+background-color: rgba(218, 102, 165, 0.767);
+margin:20px;
+/*flex-direction:column;*/
+
+}
+.Picture {
+  width:150px;
+  height:90px;
+  margin-top:50px;
+  margin-left:50px;
+}
+.Information {
+  display: flex;
+  flex-direction:column;
+  
+  
+}
+.Name {
+  
+  text-align: center;
+  margin:auto;
+  
+}
+.Text{
+  
+  margin-left:500px;
+}
