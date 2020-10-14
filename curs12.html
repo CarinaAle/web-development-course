@@ -32,7 +32,7 @@
         // of the browser
         // instead of 1515 please use window.innerWidth to get the width of the browser. This will make your code work
         // on any resolution not just yours :)
-        if (w > 1515) cancelInterval(growing);
+        if (w > 1515) clearInterval(growing);
         w = w + 5;
         document.getElementById("grow").style.width = w + "px";
       }, 1000);
