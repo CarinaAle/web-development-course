@@ -1,0 +1,27 @@
+body {
+    background-color: grey;
+    margin: 0px;
+    width: 100vh;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+
+}
+.profile {
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    top:100px;
+    left:300px;
+    border: 2px rgba(89, 100, 38, 0.877) solid;
+
+}
+.profile img{
+    width: 300px;
+    height:250px;
+    
+}
+#contact{
+    background-color: whitesmoke;
+    height:40px;
+}
